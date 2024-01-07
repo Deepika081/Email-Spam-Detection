@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url({{url_for('static', filename='logic.jpg')}});
+            color: white;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .image {
+            margin: 0 16px;
+        }
+
+        .text {
+            margin: 180px 350px;
+            max-width: 500px;
+            text-align: center;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            width: 500px;
+            height: 230px;
+            border-radius: 20px;
+        }
+
+        .button {
+            background-color: white;
+            color: black;
+            padding: 12px 16px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 0;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Protect yourself from spam</h1>
+            <h3>Keep your inbox safe from viruses, scams, and other threats.</h3>
+            <a href="/second" class="button">Verify</a>
+        </div>
+    </div>
+</body>
+</html>
